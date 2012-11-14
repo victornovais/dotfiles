@@ -1,0 +1,1 @@
+/home/victornovais//.dotfiles/zsh/custom/daltonmatos.zsh-theme
