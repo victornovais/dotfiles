@@ -21,11 +21,16 @@
     changed = red
     untracked = red reverse
 [alias]
-    ch = checkout
-    st = status
-    a = add
-    co = commit
-    re = rebase
+    this = !git init && git add . && git commit -m \"initial commit\"
+    alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\t=> \\2/' | sort
+    dev = checkout develop
+    master = checkout master
+    ad = add
     br = branch
+    ch = checkout
+    co = commit -m
+    df = diff
     pl = pull
     ps = push
+    st = status
+    re = rebase
